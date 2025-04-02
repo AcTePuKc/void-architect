@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void Architect</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <h1>Void Architect</h1>
+
+    <!-- Main Game Area -->
+    <div id="game-container">
+        <!-- Core element will be added here by JS -->
+        <div id="void-core" class="clickable"></div>
+
+        <!-- Structure placement areas / visual containers will go here -->
+    </div>
+
+    <!-- UI Panel -->
+    <div id="ui-panel">
+        <div class="resource-display">
+            Void Energy: <span id="energy-display">0</span>
+        </div>
+        <div class="resource-display">
+            Energy/sec: <span id="eps-display">0</span>
+        </div>
+        <div class="core-status">
+            Core Heat: <span id="heat-display">0</span>%
+            <div id="heat-bar-container">
+                <div id="heat-bar"></div>
+            </div>
+        </div>
+        <!-- Buttons for upgrades, skills, prestige etc. will be added here -->
+        <div id="controls">
+            <!-- Example Button -->
+            <button id="buy-crystal-node">Buy Crystal Node (Cost: <span id="crystal-cost">10</span>)</button>
+        </div>
+        <div id="skills-panel">
+             <!-- Skill buttons QWER -->
+        </div>
+         <div id="prestige-panel">
+             <!-- Prestige button -->
+         </div>
+    </div>
+
+    <!-- Save/Load Section -->
+    <div id="save-load-panel">
+        <button id="save-button">Save Game</button>
+        <button id="load-button">Load Game</button>
+        <button id="export-button">Export Save (TXT)</button>
+        <label>Import Save: <input type="text" id="import-input" placeholder="Paste save data here"></label>
+        <button id="import-button">Import</button>
+        <button id="reset-button">HARD RESET</button> <!-- For testing -->
+    </div>
+
+
+    <!-- Load main script as module -->
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
