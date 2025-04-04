@@ -36,9 +36,31 @@
         </div>
         <!-- Buttons for upgrades, skills, prestige etc. will be added here -->
         <div id="controls">
-            <!-- Example Button -->
+            <!-- Crystal Node Button (Existing) -->
             <button id="buy-crystal-node">Buy Crystal Node (Cost: <span id="crystal-cost">10</span>)</button>
+        
+            <!-- <<< ADD FLUX SHARD BUTTON >>> -->
+            <button id="buy-flux-shard">Buy Flux Shard (Cost: <span id="flux-shard-cost">50</span>)</button>
+            <div><small>+<span id="flux-shard-effect">2</span>% Click Energy / Shard</small></div>
+            <div><small>Owned: <span id="flux-shard-count">0</span></small></div>
+        
+            <!-- <<< ADD GRAVITY WELL BUTTON >>> -->
+            <button id="buy-gravity-well">Build Gravity Well (Cost: <span id="gravity-well-cost">250</span>)</button>
+            <div><small>Auto-clicks Core <span id="gravity-well-effect">1</span> time(s) / sec</small></div>
+            <div><small>Owned: <span id="gravity-well-count">0</span></small></div>
+            <div><small>Total Auto-CPS: <span id="total-cps-display">0</span></small></div>
+        
+            <hr>
+            <h3>Upgrades</h3>
+        
+            <!-- <<< ADD CLICK POWER UPGRADE BUTTON >>> -->
+            <div class="upgrade-item">
+                <button id="upgrade-click-power">Increase Click Power +25% (Cost: <span id="upgrade-click-power-cost">25</span>)</button>
+                <div><small>Current Bonus: +<span id="click-power-bonus">0</span>%</small></div>
+            </div>
+            <!-- More upgrades will go here -->
         </div>
+        
         <div id="skills-panel">
              <!-- Skill buttons QWER -->
         </div>

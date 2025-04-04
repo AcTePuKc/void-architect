@@ -21,6 +21,8 @@ export const INITIAL_STATE = Object.freeze({
     isCoreOverheated: false,
     clickEfficiency: 1.0, // Multiplier (1.0 = 100%, down to 0.25 = 25%)
 
+    
+
     // Structures State (example structure - will be expanded)
     // We store counts and potentially levels or other properties per structure type
     structures: {
@@ -54,9 +56,7 @@ export const INITIAL_STATE = Object.freeze({
     // selectedVoidform: null,
 
     // Timestamps / Settings (optional)
-    lastSaveTime: null,
-    // playTimeSeconds: 0,
-
+    lastSaveTime: 0,
     // Versioning for save data migration
     saveVersion: 1,
 });
@@ -82,7 +82,7 @@ export const CRYSTAL_NODE_BASE_EPS = 0.1; // Base Energy Per Second per node
 export const UI_UPDATE_INTERVAL = 100; // 10 times per second
 
 // Autosave Interval (milliseconds)
-export const AUTOSAVE_INTERVAL = 30000; // Every 30 seconds
+export const AUTOSAVE_INTERVAL = 300000; // Every 5 minutes (300,000 ms)
 
 
 // Make the tuning constants easily accessible

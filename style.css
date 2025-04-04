@@ -131,3 +131,48 @@ h1 {
     border: 1px solid #55efc4;
     box-shadow: 0 0 5px #00b894;
 }
+#controls button {
+    display: block; /* Make buttons take full width */
+    width: 90%;
+    margin: 8px auto; /* Center buttons */
+    padding: 10px 15px; /* Slightly larger buttons */
+}
+
+#controls > div {
+    text-align: center;
+    margin: -5px 0 10px 0;
+    font-size: 0.9em;
+    color: #bdc3c7; /* Lighter grey */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #4a4a5a;
+    margin: 15px 0;
+}
+
+h3 {
+    color: #a29bfe;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.upgrade-item {
+    margin-bottom: 15px;
+}
+
+.structure.fluxShard {
+    background-color: #fdcb6e; /* Yellow/Orange */
+    border: 1px solid #ffeaa7;
+    box-shadow: 0 0 5px #fdcb6e;
+    border-radius: 50%; /* Make shards circular */
+}
+.structure.gravityWell {
+    background-color: #a29bfe; /* Lavender/Purple */
+    border: 1px solid #d6a2fc;
+    box-shadow: 0 0 8px #a29bfe;
+    width: 35px; /* Slightly larger */
+    height: 35px;
+    border-radius: 8px; /* Rounded square */
+    opacity: 0.8; /* Slightly transparent */
+}
